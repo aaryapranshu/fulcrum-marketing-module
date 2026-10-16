@@ -1,3 +1,20 @@
+# Fulcrum Marketing Module
+
+Fulcrum Labs' copy of [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) (MIT), wired into FulcrumOS.
+
+- **Upstream skills** live untouched in `skills/` and `tools/`. Pull updates with `fulcrum/scripts/sync-upstream.sh`.
+- **Fulcrum layer** lives in `fulcrum/`:
+  - `fulcrum/product-marketing.md` is the bridge every skill reads first. It points back to `intel/` and `playbook/` in the FulcrumOS workspace, so Fulcrum's voice, proof rules and operating playbook override generic skill advice.
+  - `fulcrum/scripts/install.sh <workspace>` copies the skills into `<workspace>/.claude/skills`, the tool guides into `.claude/marketing-tools`, and the bridge into `.agents/` (it won't overwrite an edited bridge).
+- Put Fulcrum-specific skill edits in `fulcrum/` or new skills, not in upstream skill files, so upstream merges stay conflict-free.
+
+```bash
+git clone https://github.com/aaryapranshu/fulcrum-marketing-module.git
+fulcrum-marketing-module/fulcrum/scripts/install.sh "$HOME/FULCRUM LABS OS"
+```
+
+---
+
 # Marketing Skills for AI Agents
 
 A collection of AI agent skills focused on marketing tasks. Built for technical marketers and founders who want AI coding agents to help with conversion optimization, copywriting, SEO, analytics, and growth engineering. Works with Claude Code, OpenAI Codex, Cursor, Windsurf, and any agent that supports the [Agent Skills spec](https://agentskills.io).
