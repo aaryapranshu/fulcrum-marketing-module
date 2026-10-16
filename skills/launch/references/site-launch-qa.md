@@ -34,10 +34,10 @@ Run it in three passes: before the switch, at the switch, and in the first two w
 - [ ] Open Graph images and titles render correctly when the URL is shared
 
 **Rollback**
-- [ ] You know how to roll back on this platform, and someone has done it once. Examples: Vercel and Netlify promote a previous deployment; Webflow restores a site backup; WordPress restores from a backup plugin or host snapshot; Ploy ◆ promotes a previous deploy from its Deploys screen (its CLI always publishes to production, with no staging target, so preview before publishing).
+- [ ] You know how to roll back on this platform, and someone has done it once. Examples: Vercel and Netlify promote a previous deployment; Webflow restores a site backup; WordPress restores from a backup plugin or host snapshot; Ploy promotes a previous deploy from its Deploys screen (its CLI always publishes to production, with no staging target, so preview before publishing).
 - [ ] DNS TTL lowered a day ahead if the switch involves DNS changes
 
-◆ marks a [Verified Partner](https://github.com/coreyhaines31/marketingskills/blob/main/tools/REGISTRY.md#verified-partners) of this repository: disclosure, not endorsement.
+
 
 ## At the switch
 

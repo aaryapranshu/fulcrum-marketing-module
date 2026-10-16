@@ -77,4 +77,4 @@ Budget the full investment (money *and* time/opportunity cost) against pipeline,
 
 ---
 
-*Distilled from Corey Haines's* Founding Marketing *(chapter: "Events create memorable experiences with potential customers"). Benchmarks are directional and pre-inflation-adjust as needed; re-verify current show pricing.*
+*Benchmarks are directional and pre-inflation-adjust as needed; re-verify current show pricing.*

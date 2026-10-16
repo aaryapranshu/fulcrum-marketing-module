@@ -4,7 +4,7 @@ Release assets provide a download path for people using Claude without a termina
 
 ## Use a release asset in Claude
 
-1. Open the [latest release](https://github.com/coreyhaines31/marketingskills/releases/latest) and choose `<name>-claude-web.zip` for the task you need. `claude-web-manifest.json` lists any skills omitted because their short descriptions need review; a source ZIP for an omitted skill is not a replacement web upload.
+1. Open the [latest release](https://github.com/aaryapranshu/fulcrum-marketing-module/releases/latest) and choose `<name>-claude-web.zip` for the task you need. `claude-web-manifest.json` lists any skills omitted because their short descriptions need review; a source ZIP for an omitted skill is not a replacement web upload.
 2. Review the skill's instructions and any scripts before enabling it.
 3. In Claude, open **Customize → Skills → + Create skill → Upload a skill** and select the ZIP. Your account or organization must permit skills and code execution.
 4. Enable the skill and try a task that matches its description. Check that Claude uses the intended skill and resources.

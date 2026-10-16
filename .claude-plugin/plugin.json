@@ -1,12 +1,12 @@
 {
-  "name": "marketing-skills",
-  "description": "Marketing skills for AI agents — conversion optimization, copywriting, SEO, paid ads, ad creative, and growth",
+  "name": "fulcrum-marketing-module",
+  "description": "Fulcrum Labs marketing module for AI agents: outbound, copywriting, offers, pricing, SEO, content, and growth",
   "version": "2.11.37",
   "author": {
-    "name": "Corey Haines"
+    "name": "Fulcrum Labs"
   },
-  "homepage": "https://github.com/coreyhaines31/marketingskills",
-  "repository": "https://github.com/coreyhaines31/marketingskills",
+  "homepage": "https://github.com/aaryapranshu/fulcrum-marketing-module",
+  "repository": "https://github.com/aaryapranshu/fulcrum-marketing-module",
   "license": "MIT",
   "skills": "./skills"
 }

@@ -55,7 +55,7 @@ Detailed mapping of Composio toolkits to marketing use cases. Organized by the s
 
 ## Coverage vs. Native Tools
 
-This table shows where Composio adds value compared to what's already in the MarketingSkills registry:
+This table shows where Composio adds value compared to what's already in the Fulcrum Marketing Module registry:
 
 | Tool | Native MCP | Native CLI | Composio MCP | Recommendation |
 |------|:----------:|:----------:|:------------:|----------------|

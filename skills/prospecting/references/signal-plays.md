@@ -88,7 +88,7 @@ Keep campaigns small. Several vendor and agency datasets show reply rates fallin
 | Tech stack | BuiltWith, Wappalyzer, tech mentions in job posts | APIs |
 | Product usage | Your own analytics and billing events | Webhooks into your CRM |
 
-See the [tools registry](https://github.com/coreyhaines31/marketingskills/blob/main/tools/REGISTRY.md) for setup. A scheduled sweep of these sources is the signal-sweep loop in the marketing-loops skill.
+See the [tools registry](https://github.com/aaryapranshu/fulcrum-marketing-module/blob/main/tools/REGISTRY.md) for setup. A scheduled sweep of these sources is the signal-sweep loop in the marketing-loops skill.
 
 ## Common mistakes
 

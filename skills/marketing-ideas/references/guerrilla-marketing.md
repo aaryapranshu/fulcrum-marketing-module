@@ -24,9 +24,9 @@ A $50–200 package sent to an unqualified lead is malpractice. The math only wo
 - **Qualify before you spend.** Reserve high-cost mailers for named accounts and hard-to-reach decision-makers where the deal size justifies the cost.
 - **Test small before scaling.** Send to a handful first. Measure reply and meeting rates. Only scale the version that actually earns responses.
 
-### Corey's Unicorn Floatie Campaign
+### The Unicorn Floatie Campaign
 
-To reach marketing leaders who ignore cold email and screen their calls, Corey mailed **giant inflatable unicorn pool floaties** to a short list of hard-to-reach targets. The floatie is absurd, oversized, and impossible to ignore — it lands as a story, not a pitch (relevance + relationship), aimed at a hand-picked list where each closed deal dwarfs the package cost (precision + ROI discipline). Recipients remembered it, mentioned it, and replied.
+To reach marketing leaders who ignore cold email and screen their calls, one founder mailed **giant inflatable unicorn pool floaties** to a short list of hard-to-reach targets. The floatie is absurd, oversized, and impossible to ignore — it lands as a story, not a pitch (relevance + relationship), aimed at a hand-picked list where each closed deal dwarfs the package cost (precision + ROI discipline). Recipients remembered it, mentioned it, and replied.
 
 ---
 
@@ -52,5 +52,3 @@ Steal the *pattern*, not the prop. Each of these turned a small, unconventional 
 3. **Run the 3-rule check** on physical mail: relevance, relationship-building, precision targeting. If it fails any one, redesign it.
 4. **Test small.** Ship to a handful, measure replies/meetings/coverage, and only scale what earns a response.
 5. **Turn the stunt into a system.** If it works, make it repeatable — a recurring mailer program, a series of films, an ongoing library — rather than a one-time spike.
-
-*Source: Corey Haines, Founding Marketing, ch. 13.*

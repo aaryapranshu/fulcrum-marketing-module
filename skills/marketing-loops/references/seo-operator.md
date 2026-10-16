@@ -85,7 +85,7 @@ Then:
 - Answer the query in the first two sentences, then add detail.
 - Use what only this company has: product screenshots, real numbers, the owner's opinions. If none exist for a topic, ask for them in the report rather than writing around the gap.
 - Never invent a statistic, quote, customer, review, price, or benchmark.
-- Ship each new page with the checklist in `seo-audit`'s [rankings push reference](https://github.com/coreyhaines31/marketingskills/blob/main/skills/seo-audit/references/rankings-push.md): internal links from at least three existing pages, title, meta description, canonical, sitemap entry, structured data where it fits.
+- Ship each new page with the checklist in `seo-audit`'s [rankings push reference](https://github.com/aaryapranshu/fulcrum-marketing-module/blob/main/skills/seo-audit/references/rankings-push.md): internal links from at least three existing pages, title, meta description, canonical, sitemap entry, structured data where it fits.
 - Draft one social post per new article, built on its single most useful point (`social`).
 
 ## The weekly report

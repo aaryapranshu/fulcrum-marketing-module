@@ -153,7 +153,7 @@ Exact permission models vary by platform. Sanity uses role-based access. Content
 
 ---
 
-## Integration with Marketing Skills
+## Integration with the Fulcrum Marketing Module
 
 ### Programmatic SEO
 
@@ -189,6 +189,6 @@ Pull CMS content into email templates for consistent messaging across web and em
 
 ## Relevant Integration Guides
 
-- [Sanity](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/sanity.md) — GROQ queries, mutations, CLI
-- [Contentful](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/contentful.md) — Delivery/Management APIs, publishing
-- [Strapi](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/strapi.md) — REST CRUD, filters, document API
+- [Sanity](https://github.com/aaryapranshu/fulcrum-marketing-module/blob/main/tools/integrations/sanity.md) — GROQ queries, mutations, CLI
+- [Contentful](https://github.com/aaryapranshu/fulcrum-marketing-module/blob/main/tools/integrations/contentful.md) — Delivery/Management APIs, publishing
+- [Strapi](https://github.com/aaryapranshu/fulcrum-marketing-module/blob/main/tools/integrations/strapi.md) — REST CRUD, filters, document API

@@ -4,8 +4,6 @@ Use this reference when the user wants more customer reviews, a review-request p
 
 Build a repeatable program that earns honest reviews, responds to feedback, and reuses permissioned evidence. The goal is useful customer feedback and credible proof; do not optimize the program for suppressing criticism or manufacturing a rating.
 
-Foundation contributed by [@Adi29102000-s in #417](https://github.com/coreyhaines31/marketingskills/pull/417), developed as the standalone follow-up requested in [#475](https://github.com/coreyhaines31/marketingskills/issues/475).
-
 ## Establish the Task
 
 Read `.agents/product-marketing.md` (or `.claude/product-marketing.md` in older setups) when available. Use existing context and ask only for missing inputs:
@@ -88,7 +86,7 @@ Return a concise program or response packet with:
 
 ## Tools and Handoffs
 
-For configured API access, consult [Trustpilot](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/trustpilot.md), [G2](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/g2.md), and the [tool registry](https://github.com/coreyhaines31/marketingskills/blob/main/tools/REGISTRY.md#reviews). These guides describe different capabilities; do not infer that a read API can create invitations or public replies. Dashboard workflows and a simple private spreadsheet can be sufficient. Do not require a paid tool for a single response.
+For configured API access, consult [Trustpilot](https://github.com/aaryapranshu/fulcrum-marketing-module/blob/main/tools/integrations/trustpilot.md), [G2](https://github.com/aaryapranshu/fulcrum-marketing-module/blob/main/tools/integrations/g2.md), and the [tool registry](https://github.com/aaryapranshu/fulcrum-marketing-module/blob/main/tools/REGISTRY.md#reviews). These guides describe different capabilities; do not infer that a read API can create invitations or public replies. Dashboard workflows and a simple private spreadsheet can be sufficient. Do not require a paid tool for a single response.
 
 - **customer-research** — mine themes and language from existing reviews; do not turn research selection into invitation gating.
 - **cro / copywriting** — present permissioned proof on conversion pages.

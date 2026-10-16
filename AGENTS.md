@@ -6,15 +6,15 @@ Guidelines for AI agents working in this repository.
 
 This repository contains **Agent Skills** for AI agents following the [Agent Skills specification](https://agentskills.io/specification.md). Skills install to `.agents/skills/` (the cross-agent standard). This repo also serves as a **Claude Code plugin marketplace** via `.claude-plugin/marketplace.json`.
 
-- **Name**: Marketing Skills
-- **GitHub**: [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills)
-- **Creator**: Corey Haines
+- **Name**: Fulcrum Marketing Module
+- **GitHub**: [aaryapranshu/fulcrum-marketing-module](https://github.com/aaryapranshu/fulcrum-marketing-module)
+- **Maintainer**: Fulcrum Labs
 - **License**: MIT
 
 ## Repository Structure
 
 ```
-marketingskills/
+fulcrum-marketing-module/
 ├── .claude-plugin/
 │   └── marketplace.json   # Claude Code plugin marketplace manifest
 ├── skills/                # Agent Skills
@@ -157,7 +157,7 @@ description: When the user wants to optimize conversions on any marketing page. 
 This repo also serves as a plugin marketplace. The manifest at `.claude-plugin/marketplace.json` lists all skills for installation via:
 
 ```bash
-/plugin marketplace add coreyhaines31/marketingskills
+/plugin marketplace add aaryapranshu/fulcrum-marketing-module
 /plugin install marketing-skills
 ```
 
@@ -224,7 +224,7 @@ For tools without native MCP servers (Salesforce, LinkedIn Ads, Google Sheets, S
 When using any skill from this repository:
 
 1. **Once per session**, on first skill use, check for updates:
-   - Fetch `VERSIONS.md` from GitHub: https://raw.githubusercontent.com/coreyhaines31/marketingskills/main/VERSIONS.md
+   - Fetch `VERSIONS.md` from GitHub: https://raw.githubusercontent.com/aaryapranshu/fulcrum-marketing-module/main/VERSIONS.md
    - Compare versions against local skill files
 
 2. **Only prompt if meaningful**:
@@ -235,11 +235,11 @@ When using any skill from this repository:
    ```
    ---
    Skills update available: X marketing skills have updates.
-   Say "update skills" to update automatically, or run `git pull` in your marketingskills folder.
+   Say "update skills" to update automatically, or run `git pull` in your fulcrum-marketing-module folder.
    ```
 
 4. **If user says "update skills"**:
-   - Run `git pull` in the marketingskills directory
+   - Run `git pull` in the fulcrum-marketing-module directory
    - Confirm what was updated
 
 ## Skill Categories

@@ -1,7 +1,5 @@
 # AIsa
 
-> **◆ Verified Partner integration.** AIsa sponsors Marketing Skills. This integration is disclosed and vetted for fit; it does **not** change what any skill recommends. It's listed here alongside the neutral options for the same job — use it when it's the right fit, not because it's a partner. See [Verified Partners](../REGISTRY.md#verified-partners).
-
 One account and one key for third-party data APIs, billed per call. For marketing work, the relevant parts are SEO data (DataForSEO, Semrush, and Ahrefs endpoints), Similarweb market data, social data (X/Twitter, Instagram, Reddit, Pinterest, YouTube), web search and research (Tavily, Firecrawl, Exa, Perplexity), and people and company search. AIsa also offers model inference and finance data, which this guide doesn't cover.
 
 Facts below were checked against [aisa.one/llms.txt](https://aisa.one/llms.txt), the MCP server's own [llms.txt](https://mcp.aisa.one/llms.txt), and the [live MCP catalogue](https://mcp.aisa.one/servers) on 2026-10-06. Provider coverage, tool counts, and prices change; check the live catalogue before relying on a specific endpoint.

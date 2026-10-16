@@ -291,7 +291,7 @@ The user should maintain a list of sources somewhere persistent at `.agents/list
 cp .agents/skills/social/references/listening-sources-template.md .agents/listening-sources.md
 # .claude/ install:
 cp .claude/skills/social/references/listening-sources-template.md .agents/listening-sources.md
-# Working inside the marketingskills repo:
+# Working inside the fulcrum-marketing-module repo:
 cp skills/social/references/listening-sources-template.md .agents/listening-sources.md
 ```
 

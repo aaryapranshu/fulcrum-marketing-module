@@ -1,11 +1,11 @@
 {
-  "name": "marketingskills",
+  "name": "fulcrum-marketing-module",
   "interface": {
-    "displayName": "Marketing Skills"
+    "displayName": "Fulcrum Marketing Module"
   },
   "plugins": [
     {
-      "name": "marketing-skills",
+      "name": "fulcrum-marketing-module",
       "source": {
         "source": "local",
         "path": "./"

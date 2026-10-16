@@ -1,6 +1,6 @@
 # Partnership Types
 
-Adapted from Corey Haines's *Founding Marketing*, Ch. 11 — "Partnerships tap into existing audiences." The fastest way to reach customers is through companies that already have their attention.
+The fastest way to reach customers is through companies that already have their attention.
 
 **Flagship proof:** HubSpot's partner program = **$100M ARR, ~40% of revenue, 3,400+ partners.** Mature partner programs average **~28% of revenue and 2× the growth** of companies without them.
 

@@ -34,12 +34,12 @@ Characterizations as of 2026-10; check current plans and limits before committin
 | **WordPress** | Open-source CMS with the largest plugin ecosystem; self-hosted or managed | Content-heavy sites, full ownership, teams with WordPress experience, budgets that favor licensing over build time | Plugin sprawl, security and update upkeep, performance depends on hosting and theme |
 | **Wix Studio, Squarespace** | All-in-one templated builders with built-in business apps | Small businesses and agencies that want hosting, commerce, and booking in one place | Less control over code and structure; harder to migrate off |
 | **Landing-page tools** (Unbounce, Instapage, Leadpages) | Builders for campaign pages, usually with A/B testing; Leadpages also builds full multi-page small-business sites | Paid-traffic landing pages; small sites on Leadpages | Unbounce and Instapage pages usually live on a subdomain or separate system rather than hosting the whole site |
-| **AI-native site platforms** (Ploy ◆, Flint, and similar) | Hosted builders where an AI agent builds, edits, and operates the site through conversation | Teams that want an agent to build and keep improving marketing pages, often alongside an existing site via path routing | Young products; hosting tied to the vendor; check export and code access before committing |
+| **AI-native site platforms** (Ploy, Flint, and similar) | Hosted builders where an AI agent builds, edits, and operates the site through conversation | Teams that want an agent to build and keep improving marketing pages, often alongside an existing site via path routing | Young products; hosting tied to the vendor; check export and code access before committing |
 | **AI app builders** (Lovable, v0, Bolt) | Prompt-to-app generators that output code | Prototypes, product UIs, and interactive tools | Built for apps more than marketing sites; CMS, SEO, and editing by non-engineers need extra work |
 | **Hand-coded** (Next.js, Astro, and similar on Vercel, Netlify, or Cloudflare) | Your own codebase and hosting | Full control and portability, engineer-owned sites, sites tightly coupled to the product | Every change needs an engineer unless you add a headless CMS; you own performance and SEO basics |
 | **Headless CMS + framework** (Sanity, Contentful, Storyblok with a hand-coded front end) | Content in a CMS, presentation in code | Large content operations with engineering support and multiple front ends | Two systems to run; marketers depend on engineers for new page types |
 
-◆ marks a [Verified Partner](https://github.com/coreyhaines31/marketingskills/blob/main/tools/REGISTRY.md#verified-partners) of this repository: disclosure, not endorsement. When you name a ◆ tool in an answer, say it's a Verified Partner of the repository this skill comes from, and name an alternative alongside it. Details for Ploy are in its [integration guide](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/ploy.md).
+ Details for Ploy are in its [integration guide](https://github.com/aaryapranshu/fulcrum-marketing-module/blob/main/tools/integrations/ploy.md).
 
 **There's rarely one right answer.** Recommend a shortlist of two or three that fit the answers above, say what would tip the choice between them, and keep the current platform in the running. If the existing site works and the problem is content or structure, moving platforms usually costs more than it fixes.
 
@@ -61,7 +61,7 @@ Often the job isn't a new site; it's a new section (a blog, landing pages, a res
 - Analytics and consent run on both systems, configured for one domain.
 - Test on a staging subdomain before switching production routing.
 
-Some hosted platforms provide the router themselves. Ploy ◆, for example, routes by path prefix in front of your domain (up to 20 rules), so its pages can serve on a subpath while everything else proxies to your existing origin. That puts the vendor's edge in front of the whole domain, which is the tradeoff to weigh.
+Some hosted platforms provide the router themselves. Ploy, for example, routes by path prefix in front of your domain (up to 20 rules), so its pages can serve on a subpath while everything else proxies to your existing origin. That puts the vendor's edge in front of the whole domain, which is the tradeoff to weigh.
 
 ## Migrating Without Losing Traffic
 

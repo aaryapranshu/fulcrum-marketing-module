@@ -2,7 +2,7 @@
 
 Buying a post in a Telegram channel is influencer marketing with a different measurement model. There is no likes-based engagement rate, no ranking feed, and the slot is usually sold by the channel's admin rather than by a creator persona. Use this reference when the user wants to advertise in Telegram channels, vet a channel before paying, or price a post.
 
-> **Disclosure:** this reference was contributed by the team behind TGScope, a Telegram analytics tool listed among the vetting options under [Tools](#tools). The benchmarks below come from TGScope's own studies of public Telegram channels (see [Sources](#sources)). They are a single vendor's dataset, so treat them as directional and check a channel against its own history before paying.
+> **Note:** the benchmarks below come from TGScope's studies of public Telegram channels (see [Sources](#sources)). They are a single vendor's dataset, so treat them as directional and check a channel against its own history before paying.
 
 ## Contents
 - How Telegram channel ads are bought

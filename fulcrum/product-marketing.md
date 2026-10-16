@@ -36,5 +36,5 @@ Fulcrum Labs builds AI infrastructure (agents, custom software, and FulcrumOS, t
 
 ## Changelog
 
-- **1.0 (15 Oct 2026):** Created as a bridge to `intel/` + `playbook/` when Corey Haines' marketingskills (50 skills) were installed into `.claude/skills/`.
+- **1.0 (15 Oct 2026):** Created as a bridge to `intel/` + `playbook/` when the Fulcrum Marketing Module (50 skills) was installed into `.claude/skills/`.
 - **1.1 (16 Oct 2026):** Public copy. Internal gap notes removed; the workspace copy keeps them.

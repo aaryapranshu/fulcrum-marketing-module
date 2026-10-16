@@ -1,7 +1,5 @@
 # Converly
 
-> **◆ Verified Partner integration.** Converly sponsors Marketing Skills. This integration is disclosed and vetted for fit; it does **not** change what any skill recommends. It's listed here alongside the neutral options for the same job — use it when it's the right fit, not because it's a partner. See [Verified Partners](../REGISTRY.md#verified-partners).
-
 Server-side conversion tracking: sends conversions to ad platforms and analytics tools when a visitor completes an action on your site — a form submit, a booked meeting, a started chat.
 
 ## Capabilities

@@ -22,14 +22,14 @@ function requestSignal() {
 
 async function api(method, path, body) {
   if (args['dry-run']) {
-    return { _dry_run: true, method, url: `${BASE_URL}${path}`, headers: { 'x-api-key': '***', 'Content-Type': 'application/json', 'x-exa-integration': 'marketingskills' }, body: body || undefined }
+    return { _dry_run: true, method, url: `${BASE_URL}${path}`, headers: { 'x-api-key': '***', 'Content-Type': 'application/json', 'x-exa-integration': 'fulcrum-marketing-module' }, body: body || undefined }
   }
   const res = await fetch(`${BASE_URL}${path}`, { signal: requestSignal(),
     method,
     headers: {
       'x-api-key': API_KEY,
       'Content-Type': 'application/json',
-      'x-exa-integration': 'marketingskills',
+      'x-exa-integration': 'fulcrum-marketing-module',
     },
     body: body ? JSON.stringify(body) : undefined,
   })

@@ -1,6 +1,6 @@
 # Story Angles — What Earns Press
 
-Distilled from Corey Haines's *Founding Marketing*, ch. 5. Chase press for the **compound effect** — authority, journalist relationships, AI-citation surface — not the traffic bump. The bump fades in a day; the backlinks, the relationships, and the citable record don't.
+Chase press for the **compound effect** — authority, journalist relationships, AI-citation surface — not the traffic bump. The bump fades in a day; the backlinks, the relationships, and the citable record don't.
 
 **The story is not your product.** Journalists write about trends, data, conflict, and humans. Your product is the evidence, never the headline. If the pitch is "we built a thing," there's no story. If the pitch is "here's a shift happening and we're proof of it," there is.
 

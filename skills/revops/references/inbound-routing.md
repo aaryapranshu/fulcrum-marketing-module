@@ -6,7 +6,7 @@ Load this when enrichment changes the next step after a demo/contact form or rou
 
 Accept and record a valid submission before depending on a third-party lookup. Preserve submitted values and attribution. Enrichment failure must not erase a lead, create a false rejection, or block an otherwise valid account signup.
 
-Use the fields needed for qualification and routing. Reuse verified CRM data and fresh exact cache hits before another paid call. For multi-provider lookup rules and cache keys, see [the prospecting playbook](https://github.com/coreyhaines31/marketingskills/blob/main/skills/prospecting/references/enrichment-playbook.md).
+Use the fields needed for qualification and routing. Reuse verified CRM data and fresh exact cache hits before another paid call. For multi-provider lookup rules and cache keys, see [the prospecting playbook](https://github.com/aaryapranshu/fulcrum-marketing-module/blob/main/skills/prospecting/references/enrichment-playbook.md).
 
 Record a stable submission ID and matched CRM identity. Replayed webhooks should not create another contact, task, notification, or booking. A personal-email domain cannot establish a company; ask for the minimum missing company information or route to a human queue.
 
@@ -40,4 +40,4 @@ Start with a shadow run that records proposed routes without changing the live e
 
 Deliver a branch table, required fields/sources, response budget, fallback, ownership rules, replay handling, launch scope, and measured pilot results. Return to the existing SLA/escalation playbook after assignment.
 
-This covers the reactive form-routing technique requested in [#498](https://github.com/coreyhaines31/marketingskills/issues/498), inspired by eliasstravik's MIT toolkit patterns. It does not require a particular enrichment vendor or add a new connector.
+This covers the reactive form-routing technique. It does not require a particular enrichment vendor or add a new connector.

@@ -24,11 +24,7 @@ Skip it for a one-off video where a human recording would take ten minutes.
 
 ## Reference Implementation
 
-The contributor's working scripts (a recorder template and a narrator) live at a fixed commit in this repo's history:
-
-https://github.com/coreyhaines31/marketingskills/tree/37cb655f4017ccec2680f9fa5f3c13e6eed36a7d/skills/feature-demo/scripts
-
-They need Node 18+, Playwright, and ffmpeg. Treat them as a reference implementation to copy and adapt. The workflow below is written so you can rebuild it without them.
+The workflow below needs Node 18+, Playwright, and ffmpeg.
 
 ## Before Recording
 

@@ -58,4 +58,4 @@ Return a table with row identity, missing field, provider order, acceptance rule
 
 Pilot on representative rows before a broad run: fresh hit, expired hit, true no-match, ambiguous company, provider failure, and duplicate input. Compare with a single-provider control under the same acceptance rule and budget. Pass qualified rows to cold-email only after contact verification; use the revops inbound-routing playbook for live form submissions.
 
-Patterns adapted from eliasstravik's MIT-licensed GTM engineering toolkit. This playbook works with existing providers or manual research.
+This playbook works with existing providers or manual research.

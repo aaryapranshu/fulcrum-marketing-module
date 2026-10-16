@@ -108,4 +108,4 @@ Decide these before launch and enforce them automatically where your tool allows
 | DMARC monitoring | EasyDMARC, dmarcian, Valimail |
 | List verification | Bouncer, MillionVerifier, NeverBounce, Truelist, ZeroBounce, and others |
 
-Setup guides: [tools registry](https://github.com/coreyhaines31/marketingskills/blob/main/tools/REGISTRY.md).
+Setup guides: [tools registry](https://github.com/aaryapranshu/fulcrum-marketing-module/blob/main/tools/REGISTRY.md).

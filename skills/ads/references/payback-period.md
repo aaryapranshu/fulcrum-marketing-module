@@ -70,4 +70,4 @@ This composes with breakeven CPL/CPC math in [b2b-paid-playbook.md](b2b-paid-pla
 
 ---
 
-*Source: Corey Haines, *Founding Marketing*, ch. 7 ("Spend budget where customers spend their time"). Payback targets and the Baremetrics first-3-months churn finding are practitioner-reported — recalibrate against your own cohort data. For attribution of the CAC inputs, see the **attribution** skill; for setting ARPU and plan structure, see the **pricing** skill.*
+*Payback targets and the Baremetrics first-3-months churn finding are practitioner-reported — recalibrate against your own cohort data. For attribution of the CAC inputs, see the **attribution** skill; for setting ARPU and plan structure, see the **pricing** skill.*

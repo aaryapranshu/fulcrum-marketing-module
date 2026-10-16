@@ -1,9 +1,5 @@
 # Ploy
 
-> **◆ Verified Partner integration.** Ploy sponsors Marketing Skills. This integration is disclosed and vetted for fit; it does **not** change what any skill recommends. It's listed here alongside the neutral options for the same job — use it when it's the right fit, not because it's a partner. See [Verified Partners](../REGISTRY.md#verified-partners).
->
-> **Second disclosure:** Corey Haines, who maintains this repository, is the credited author of several Ploybooks in Ploy's library, including "Programmatic SEO at Scale," which follows the same 12 playbooks as this repo's `programmatic-seo` skill.
-
 AI marketing platform built around a hosted website builder. An in-app agent builds and edits pages, writes copy, runs research and analysis, and publishes; Ploybooks (markdown runbooks the agent executes) automate recurring work on a schedule or from a webhook. Built by a team led by Webflow's former CTO; generally available since June 2026.
 
 Facts below were checked against [docs.ploy.ai](https://docs.ploy.ai) and [ploy.ai/pricing](https://ploy.ai/pricing) on 2026-10-02. Ploy ships fast, so re-check anything an answer depends on.

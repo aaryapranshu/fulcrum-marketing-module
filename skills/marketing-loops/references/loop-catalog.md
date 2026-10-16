@@ -58,7 +58,7 @@ Loops are grouped by function. Naming follows the "The X loop" convention.
 - **Self-check**: Is the page the right one for the query, or is another page on the site competing for it (cannibalization)? Fix the conflict first. Is the impression count big enough for the position to mean anything?
 - **State / idempotency**: Track each page's last edit date and starting metrics; give an edited page 3–4 weeks before touching it again, so results are attributable.
 - **Stop / bail-out**: No candidates above the impression floor → log "no action." Two pushes on the same page with no movement → stop and escalate; the problem is probably authority or intent, not on-page.
-- **Output**: Staged page edits, each with the query, the reason, the change, and its baseline. Method in `seo-audit`'s [rankings push reference](https://github.com/coreyhaines31/marketingskills/blob/main/skills/seo-audit/references/rankings-push.md).
+- **Output**: Staged page edits, each with the query, the reason, the change, and its baseline. Method in `seo-audit`'s [rankings push reference](https://github.com/aaryapranshu/fulcrum-marketing-module/blob/main/skills/seo-audit/references/rankings-push.md).
 
 ### The AI-answer check loop
 - **Check cadence**: Weekly (AI answers vary run to run; daily checks mostly measure noise)

@@ -1,17 +1,17 @@
 {
-  "name": "marketingskills",
+  "name": "fulcrum-marketing-module",
   "owner": {
-    "name": "Corey Haines",
-    "url": "https://corey.co"
+    "name": "Fulcrum Labs",
+    "url": "https://github.com/aaryapranshu/fulcrum-marketing-module"
   },
   "metadata": {
-    "description": "Marketing skills for AI agents — conversion optimization, copywriting, SEO, paid ads, and growth",
+    "description": "Fulcrum Labs marketing module for AI agents: outbound, copywriting, offers, pricing, SEO, content, and growth",
     "version": "2.11.37",
-    "repository": "https://github.com/coreyhaines31/marketingskills"
+    "repository": "https://github.com/aaryapranshu/fulcrum-marketing-module"
   },
   "plugins": [
     {
-      "name": "marketing-skills",
+      "name": "fulcrum-marketing-module",
       "description": "50 marketing skills for technical marketers and founders: CRO, copywriting, cold email, prospecting, SEO, AI SEO, paid ads, SMS, ad creative, video production, image generation, co-marketing, churn prevention, pricing, referrals, revenue operations, sales enablement, customer research, site architecture, comprehensive AARRR-structured marketing plans, public relations and earned media, offer design, event marketing and webinars, and more",
       "source": "./"
     }

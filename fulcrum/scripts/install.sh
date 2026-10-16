@@ -14,7 +14,7 @@ for dir in "$REPO"/skills/*/; do
 done
 
 rsync -a "$REPO/tools/" "$TARGET/.claude/marketing-tools/"
-cp "$REPO/LICENSE" "$TARGET/.claude/marketing-tools/LICENSE-marketingskills"
+cp "$REPO/LICENSE" "$TARGET/.claude/marketing-tools/LICENSE-fulcrum-marketing-module"
 
 # The bridge file is Fulcrum-owned. Don't clobber a workspace copy that's been edited.
 if [ ! -f "$TARGET/.agents/product-marketing.md" ]; then

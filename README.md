@@ -1,12 +1,11 @@
 # Fulcrum Marketing Module
 
-Fulcrum Labs' copy of [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) (MIT), wired into FulcrumOS.
+Marketing skills for AI agents, built by **Fulcrum Labs** and wired into FulcrumOS. Outbound, copywriting, offers, pricing, sales enablement, SEO, content, analytics and growth, as Agent Skills for Claude Code, Codex, Cursor and any agent that supports the [Agent Skills spec](https://agentskills.io).
 
-- **Upstream skills** live untouched in `skills/` and `tools/`. Pull updates with `fulcrum/scripts/sync-upstream.sh`.
+- **Skills** live in `skills/`; tool integration guides and CLIs live in `tools/`.
 - **Fulcrum layer** lives in `fulcrum/`:
   - `fulcrum/product-marketing.md` is the bridge every skill reads first. It points back to `intel/` and `playbook/` in the FulcrumOS workspace, so Fulcrum's voice, proof rules and operating playbook override generic skill advice.
   - `fulcrum/scripts/install.sh <workspace>` copies the skills into `<workspace>/.claude/skills`, the tool guides into `.claude/marketing-tools`, and the bridge into `.agents/` (it won't overwrite an edited bridge).
-- Put Fulcrum-specific skill edits in `fulcrum/` or new skills, not in upstream skill files, so upstream merges stay conflict-free.
 
 ```bash
 git clone https://github.com/aaryapranshu/fulcrum-marketing-module.git
@@ -14,34 +13,6 @@ fulcrum-marketing-module/fulcrum/scripts/install.sh "$HOME/FULCRUM LABS OS"
 ```
 
 ---
-
-# Marketing Skills for AI Agents
-
-A collection of AI agent skills focused on marketing tasks. Built for technical marketers and founders who want AI coding agents to help with conversion optimization, copywriting, SEO, analytics, and growth engineering. Works with Claude Code, OpenAI Codex, Cursor, Windsurf, and any agent that supports the [Agent Skills spec](https://agentskills.io).
-
-Built by [Corey Haines](https://corey.co?ref=marketingskills). Need hands-on help? Check out [Conversion Factory](https://conversionfactory.co?ref=marketingskills) — Corey's agency for conversion optimization, landing pages, and growth strategy. Want to learn more about marketing? Subscribe to [Swipe Files](https://swipefiles.com?ref=marketingskills). Want to get dangerously good at using AI for marketing? Check out [AI Marketing Training](https://conversionfactory.co/offers/ai-marketing-training?ref=marketingskills). Want an autonomous AI agent that uses these skills to be your CMO? Try [Magister](https://magistermarketing.com?ref=marketingskills).
-
-New to the terminal and coding agents? Check out the companion guide [Coding for Marketers](https://codingformarketers.com?ref=marketingskills).
-
-Want your agent to read your marketing accounts? Follow the [guided tool connection workflow](tools/SETUP.md) for scoped credentials and a first read-only result.
-
-**Contributions welcome!** Found a way to improve a skill or have a new one to add? [Open a PR](#contributing).
-
-Run into a problem or have a question? [Open an issue](https://github.com/coreyhaines31/marketingskills/issues) — we're happy to help.
-
-## Partners
-
-The library is free and MIT-licensed. [Verified Partners](tools/REGISTRY.md#verified-partners) fund the work — vetted, disclosed tool integrations, listed alongside the neutral options and never influencing what the core skills recommend. The full rules and boundaries are in [tools/PARTNERS.md](tools/PARTNERS.md). [Become a partner →](https://marketing-skills.com/sponsorship)
-
-<!-- PARTNERS:START -->
-> ◆ **[Converly](https://converly.io?ref=marketingskills)** — *Conversion tracking / attribution.* Server-side conversion tracking that fires when someone submits a form, books a meeting, or starts a chat — passing click IDs and identifiers for Enhanced Conversions (Google) and high EMQ match rates (Meta), across 100+ tools. CLI + MCP so your agent sets it up in minutes. → [Integration guide](tools/integrations/converly.md)
-
-> ◆ **[Ploy](https://ploy.ai?ref=marketingskills)** — *AI website & growth platform.* AI marketing platform built around a hosted website builder — an in-app agent that builds and publishes pages, PloyDB for pages at scale, routing to add pages to an existing site, built-in analytics and visitor identification, and a CLI for coding agents. → [Integration guide](tools/integrations/ploy.md)
-
-> ◆ **[AIsa](https://aisa.one)** — *SEO, search & social data.* One AIsa key, pay as you go, instead of a subscription to every data platform. Agents get SEO, search, social, and market data from Similarweb, Semrush, Ahrefs, DataForSEO, Tavily, Reddit, X, and more through REST or MCP, and pay only for the calls they make. → [Integration guide](tools/integrations/aisa.md)
-<!-- PARTNERS:END -->
-
-<!-- The Partners block above is generated from partners.json — run `node scripts/sync-partners.mjs` after editing it. -->
 
 ## What are Skills?
 
@@ -149,13 +120,13 @@ Use [npx skills](https://github.com/vercel-labs/skills) to install skills direct
 
 ```bash
 # Install all skills
-npx skills add coreyhaines31/marketingskills
+npx skills add aaryapranshu/fulcrum-marketing-module
 
 # Install specific skills
-npx skills add coreyhaines31/marketingskills --skill cro copywriting
+npx skills add aaryapranshu/fulcrum-marketing-module --skill cro copywriting
 
 # List available skills
-npx skills add coreyhaines31/marketingskills --list
+npx skills add aaryapranshu/fulcrum-marketing-module --list
 ```
 
 The CLI detects which agents you have installed and asks where to install. For Claude Code it installs into `.claude/skills/`; universal agents share `.agents/skills/`.
@@ -164,7 +135,7 @@ The CLI detects which agents you have installed and asks where to install. For C
 > If you run the command from **inside** an agent session (e.g., asking Claude Code to install the skills for you), the CLI runs non-interactively and may only install to the universal `.agents/skills/` directory, which Claude Code does not read. Pass the agent explicitly:
 >
 > ```bash
-> npx skills add coreyhaines31/marketingskills -a claude-code
+> npx skills add aaryapranshu/fulcrum-marketing-module -a claude-code
 > ```
 
 ### Option 2: Claude Code Plugin
@@ -173,7 +144,7 @@ Install via Claude Code's built-in plugin system:
 
 ```bash
 # Add the marketplace
-/plugin marketplace add coreyhaines31/marketingskills
+/plugin marketplace add aaryapranshu/fulcrum-marketing-module
 
 # Install all marketing skills
 /plugin install marketing-skills
@@ -182,8 +153,8 @@ Install via Claude Code's built-in plugin system:
 > **Note:** `/plugin` is only available in an interactive Claude Code CLI session. It is **not** available in Claude Code on the web, GitHub Actions, or other non-interactive/remote environments — in those cases you'll see `/plugin isn't available in this environment`. Use **Option 1 (`npx skills`)** instead, or the equivalent CLI commands:
 >
 > ```bash
-> claude plugin marketplace add coreyhaines31/marketingskills
-> claude plugin install marketing-skills@marketingskills
+> claude plugin marketplace add aaryapranshu/fulcrum-marketing-module
+> claude plugin install marketing-skills@fulcrum-marketing-module
 > ```
 
 ### Option 3: OpenAI Codex Plugin
@@ -192,7 +163,7 @@ Install via Codex's plugin system:
 
 ```bash
 # Add the marketplace
-codex plugin marketplace add coreyhaines31/marketingskills
+codex plugin marketplace add aaryapranshu/fulcrum-marketing-module
 
 # Then browse and install from inside a Codex session
 /plugins
@@ -205,8 +176,8 @@ Select **marketing-skills** to install all skills. To pick up new releases later
 Clone the entire repo and copy the skills folder:
 
 ```bash
-git clone https://github.com/coreyhaines31/marketingskills.git
-cp -r marketingskills/skills/* .agents/skills/
+git clone https://github.com/aaryapranshu/fulcrum-marketing-module.git
+cp -r fulcrum-marketing-module/skills/* .agents/skills/
 ```
 
 ### Option 5: Git Submodule
@@ -214,10 +185,10 @@ cp -r marketingskills/skills/* .agents/skills/
 Add as a submodule for easy updates:
 
 ```bash
-git submodule add https://github.com/coreyhaines31/marketingskills.git .agents/marketingskills
+git submodule add https://github.com/aaryapranshu/fulcrum-marketing-module.git .agents/fulcrum-marketing-module
 ```
 
-Then reference skills from `.agents/marketingskills/skills/`.
+Then reference skills from `.agents/fulcrum-marketing-module/skills/`.
 
 ### Option 6: Fork and Customize
 
@@ -231,18 +202,18 @@ Use [SkillKit](https://github.com/rohitg00/skillkit) to install skills across mu
 
 ```bash
 # Install all skills
-npx skillkit install coreyhaines31/marketingskills
+npx skillkit install aaryapranshu/fulcrum-marketing-module
 
 # Install specific skills
-npx skillkit install coreyhaines31/marketingskills --skill cro copywriting
+npx skillkit install aaryapranshu/fulcrum-marketing-module --skill cro copywriting
 
 # List available skills
-npx skillkit install coreyhaines31/marketingskills --list
+npx skillkit install aaryapranshu/fulcrum-marketing-module --list
 ```
 
 ### Option 8: Claude Web Skill ZIPs
 
-Download the desired `<name>-claude-web.zip` from [Releases](https://github.com/coreyhaines31/marketingskills/releases/latest), then use **Customize → Skills → + Create skill → Upload a skill** in Claude. Each archive contains one skill. Account permissions and code execution must allow skills.
+Download the desired `<name>-claude-web.zip` from [Releases](https://github.com/aaryapranshu/fulcrum-marketing-module/releases/latest), then use **Customize → Skills → + Create skill → Upload a skill** in Claude. Each archive contains one skill. Account permissions and code execution must allow skills.
 
 The web-target archive uses an explicitly reviewed shorter description; its instructions and resources are preserved. The attached web manifest lists any skills whose description still needs review; newly created release notes also summarize omissions. Installing a ZIP does not configure local CLIs, MCP servers, credentials, or related skills. See [release packaging and verification](docs/skill-release-packaging.md) for archive contents, source variants, and unverified client limitations.
 
@@ -260,7 +231,7 @@ rm -rf page-cro form-cro \
        signup-flow-cro social-content
 ```
 
-Then reinstall the v2.0 skills via your usual method (e.g., `npx skills add coreyhaines31/marketingskills`).
+Then reinstall the v2.0 skills via your usual method (e.g., `npx skills add aaryapranshu/fulcrum-marketing-module`).
 
 ### Migrate the product marketing context file
 
@@ -381,16 +352,8 @@ You can also invoke skills directly:
 
 ## Contributing
 
-Found a way to improve a skill? Have a new skill to suggest? PRs and issues welcome!
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on adding or improving skills.
+Issues and pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
-[MIT](LICENSE) - Use these however you want.
-
-<br />
-<br />
-<a href="https://vercel.com/open-source-program">
-  <img alt="Vercel OSS Program" src="https://vercel.com/oss/program-badge-2026.svg" />
-</a>
+MIT. See [LICENSE](LICENSE).

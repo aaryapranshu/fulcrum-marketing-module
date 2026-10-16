@@ -2,7 +2,7 @@
 
 const TOKEN = process.env.GITHUB_TOKEN
 const BASE_URL = 'https://api.github.com'
-const USER_AGENT = 'marketingskills-prospects-cli'
+const USER_AGENT = 'fulcrum-marketing-module-prospects-cli'
 
 function parseArgs(args) {
   const result = { _: [] }
