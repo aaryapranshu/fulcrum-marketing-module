@@ -102,8 +102,43 @@ Append this section to `<workspace>/CLAUDE.md` (create the file if it doesn't ex
 ```markdown
 ## Marketing skills (Fulcrum Marketing Module)
 
-50 marketing skills live in `.claude/skills/` and trigger automatically on matching requests (cold email, copywriting, offers, pricing, sales enablement, social, SEO, content strategy, launch, analytics, and more). Each one reads `.agents/product-marketing.md` first for this business's context. Tool integration guides and CLIs are in `.claude/marketing-tools/`.
-To update: say "update the Fulcrum Marketing Module".
+50 marketing skills live in `.claude/skills/`. **Whenever a request touches marketing, sales, outreach, content, pricing, SEO or growth, invoke the matching skill below with the Skill tool before answering, even if the user doesn't name it.** If several match, start with the most specific and chain them when the task spans more than one (e.g. `prospecting` → `cold-email`). Skip the skill only for a one-line factual answer. If this OS has its own skill for the same job, prefer that one.
+
+Every skill reads `.agents/product-marketing.md` first. This OS's own voice, proof and process files win over generic skill advice. Never invent results, clients or metrics, and show any external message as a draft before sending.
+
+| When the user wants to… | Skill |
+|---|---|
+| Write cold emails, LinkedIn outreach, follow-ups, handle replies, fix deliverability | `cold-email` |
+| Find leads, build prospect lists, define ICP, spot buying signals, research accounts | `prospecting` |
+| Make pitch decks, one-pagers, objection handling, demo or call scripts, case studies | `sales-enablement` |
+| Score or route leads, fix pipeline stages, sales handoff, CRM process | `revops` |
+| Design or improve the offer, guarantee, bonuses, packaging | `offers` |
+| Set or change prices, tiers, pricing page | `pricing` |
+| Write website or landing page copy, headlines, CTAs, value props | `copywriting` |
+| Edit, tighten or de-AI existing copy | `copy-editing` |
+| LinkedIn / X / Instagram / TikTok posts, hooks, content calendar | `social` |
+| Decide what content to make, topics, editorial plan | `content-strategy` |
+| Email sequences, newsletters, nurture, onboarding emails | `emails` |
+| Lead magnets, gated content, opt-in offers | `lead-magnets` |
+| Video or image creative | `video`, `image` |
+| Paid ads strategy / ad copy and variations | `ads` / `ad-creative` |
+| Page or form conversion, signup flow, onboarding, popups, paywalls | `cro`, `signup`, `onboarding`, `popups`, `paywalls` |
+| A/B tests and experiments | `ab-testing` |
+| Reduce churn, cancellations, failed payments | `churn-prevention` |
+| SEO audit / AI search visibility / pages at scale / schema / site structure | `seo-audit` / `ai-seo` / `programmatic-seo` / `schema` / `site-architecture` |
+| Competitor research / comparison and alternative pages | `competitor-profiling` / `competitors` |
+| Customer interviews, call transcripts, reviews, voice of customer | `customer-research` |
+| Full marketing or GTM plan / ideas / pressure-test a decision | `marketing-plan` / `marketing-ideas` / `marketing-council` |
+| Persuasion and buyer psychology | `marketing-psychology` |
+| Launch a product or feature | `launch` |
+| Events, webinars / PR and press / influencers and sponsorships | `events` / `public-relations` / `influencer-marketing` |
+| Partnerships, referrals, affiliates, community | `co-marketing`, `referrals`, `community-marketing` |
+| Free tools, directories, app store listings, SMS / WhatsApp marketing | `free-tools`, `directory-submissions`, `aso`, `sms` |
+| Tracking, GA4, UTMs / which channels drive revenue | `analytics` / `attribution` |
+| Recurring automated marketing workflows | `marketing-loops` |
+| Set up or update this business's positioning context | `product-marketing` |
+
+Tool integration guides and CLIs are in `.claude/marketing-tools/`. To update: say "update the Fulcrum Marketing Module".
 ```
 
 ## 6. Verify
@@ -113,7 +148,7 @@ Check each of these and fix anything that fails:
 - Every folder in the module's `skills/` has a matching `<workspace>/.claude/skills/<name>/SKILL.md`, except names skipped for a clash. Its frontmatter `name:` matches the folder name.
 - `<workspace>/.claude/marketing-tools/REGISTRY.md` exists.
 - `<workspace>/.agents/product-marketing.md` exists and is about the user's business, or the user has been told how to create it.
-- `CLAUDE.md` has the Marketing skills section.
+- `CLAUDE.md` has the Marketing skills section with the routing table, and every skill named in that table exists in `.claude/skills/` (or was skipped for a clash and the user knows).
 
 The tool CLIs in `marketing-tools/clis/` need API keys only when someone uses that specific tool. Don't ask for keys during install.
 
