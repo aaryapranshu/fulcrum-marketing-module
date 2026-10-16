@@ -4,13 +4,16 @@ Marketing skills for AI agents, built by **Fulcrum Labs** and wired into Fulcrum
 
 - **Skills** live in `skills/`; tool integration guides and CLIs live in `tools/`.
 - **Fulcrum layer** lives in `fulcrum/`:
-  - `fulcrum/product-marketing.md` is the bridge every skill reads first. It points back to `intel/` and `playbook/` in the FulcrumOS workspace, so Fulcrum's voice, proof rules and operating playbook override generic skill advice.
-  - `fulcrum/scripts/install.sh <workspace>` copies the skills into `<workspace>/.claude/skills`, the tool guides into `.claude/marketing-tools`, and the bridge into `.agents/` (it won't overwrite an edited bridge).
+  - `fulcrum/scripts/install.sh <workspace>` copies the skills into `<workspace>/.claude/skills` and the tool guides into `.claude/marketing-tools`. It skips any same-named skill it didn't install (`--force` to replace) and is safe to re-run for updates.
+  - `fulcrum/product-marketing.md` is Fulcrum Labs' own context bridge. It's installed only with `--with-fulcrum-bridge`, in Fulcrum's internal workspace.
 
-```bash
-git clone https://github.com/aaryapranshu/fulcrum-marketing-module.git
-fulcrum-marketing-module/fulcrum/scripts/install.sh "$HOME/FULCRUM LABS OS"
-```
+## Install into your OS
+
+Open Claude Code in your OS folder and send:
+
+> Install the Fulcrum Marketing Module into my OS. Follow the instructions at https://raw.githubusercontent.com/aaryapranshu/fulcrum-marketing-module/main/INSTALL.md step by step, then tell me what you installed.
+
+The full agent instructions (macOS, Linux and Windows) are in [INSTALL.md](INSTALL.md).
 
 ---
 
